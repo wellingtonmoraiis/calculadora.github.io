@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  width: 200px;
+}
+.container {
+  width: 340px;
+  height: 650px;
+  margin: 0 auto;
+  background-color: #037cb4;
+  border-radius: 8px;
+  border-color: 1px solid #149ddc;
+}
+.container img {
+  margin: 0 auto;
+}
+h1,
+p {
+  text-align: center;
+  color: #ffffff;
+}
+p{
+  font-size: 1.1rem;
+}
+
+/* IMPUT */
+.campo-altura,
+.campo-peso {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#altura,
+#peso {
+  width: 250px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 18px;
+  border-radius: 8px;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+
+/* BOTÃO */
+
+#btn {
+  margin-left: 28%;
+  margin-top: 15px;
+  width: 150px;
+  height: 30px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid #149ddc;
+  background-color: #037cb4;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* RESULTADO */
+.resultado {
+  width: 200px;
+  height: 90px;
+  border: 1px solid #149ddc;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #06608a;
+}
+#result-text {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 30px;
+}
