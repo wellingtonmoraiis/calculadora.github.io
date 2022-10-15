@@ -6,15 +6,17 @@ function calc() {
   let info = "";
 
   if (imc < 18.5) {
-    info = "Está abaixo do peso!";
+    info = `IMC: ${imc.toFixed(2)} "Abaixo do peso!"`;
   } else if (imc < 24.9) {
-    info = "Está no peso ideal!";
+    info = `IMC: ${imc.toFixed(2)} "Peso ideal!"`;
   } else if (imc < 29.9) {
-    info = "Sobrepeso!";
+    info = `IMC: ${imc.toFixed(2)} "Sobrepeso!"`;
+  } else if (imc < 34.9) {
+    info = `IMC: ${imc.toFixed(2)} "Obesidade 1"`;
   } else if (imc < 39.9) {
-    info = "Obesidade!";
-  } else if (imc > 39.9) {
-    info = "Obesidade Grave!";
+    info = `IMC: ${imc.toFixed(2)} "Obesidade 2"`;
+  } else if (imc >= 40.0){
+    info = `IMC: ${imc.toFixed(2)} "Obesidade 3"`;
   }
 
   document.querySelector("#result-text").innerText = info;
